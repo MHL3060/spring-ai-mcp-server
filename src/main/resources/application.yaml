@@ -1,0 +1,16 @@
+spring.application.name: mcp-server
+spring:
+  ai:
+    mcp:
+      server:
+        capabilities:
+          tool: true
+        sse-message-endpoint: /mcp/message
+        version: 0.0.1
+server.port: 8081
+logging:
+  level:
+    org.springframework.ai: debug
+    io.modelcontextprotocol: trace
+
+
